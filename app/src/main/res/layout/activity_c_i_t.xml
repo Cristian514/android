@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CITA">
+
+    <TextView
+        android:id="@+id/Agenda"
+        android:layout_width="243dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:text="AGENDAR CITA"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/UserDoctor"
+        android:layout_width="246dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Agenda"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="240dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="35dp"
+        android:text="JOSE EMUDIES"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserDoctor" />
+
+    <TextView
+        android:id="@+id/edad"
+        android:layout_width="243dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:text="68 AÑOS"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/especialidad"
+        android:layout_width="242dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Medico General"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edad" />
+
+    <Button
+        android:id="@+id/agendar"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="25dp"
+        android:text="Agendar Cita"
+        app:layout_constraintEnd_toStartOf="@+id/otros"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/especialidad" />
+
+    <Button
+        android:id="@+id/otros"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:text="Otros Especialistas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/especialidad" />
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="25dp"
+        android:text="Volver"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agendar" />
+</android.support.constraint.ConstraintLayout>
